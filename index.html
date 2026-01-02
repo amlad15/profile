@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<title>Aaron Lad – 3D Solar System Portfolio</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="stylesheet" href="style.css" />
+
+<!-- Three.js Import Map (Zero Dependencies) -->
+<script type="importmap">
+{
+"imports": {
+"three": "https://unpkg.com/three@0.158.0/build/three.module.js"
+}
+}
+</script>
+</head>
+
+<body>
+<canvas id="scene"></canvas>
+
+<!-- Modal Overlay -->
+<div id="overlay" class="hidden">
+<div class="modal">
+<h2 id="modal-title"></h2>
+<p id="modal-content"></p>
+<button id="resetCamera">Back to Orbit</button>
+</div>
+</div>
+
+<script type="module" src="main.js"></script>
+</body>
+</html>
