@@ -1,0 +1,71 @@
+* {
+box-sizing: border-box;
+margin: 0;
+padding: 0;
+font-family: system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+body {
+overflow: hidden;
+background: radial-gradient(circle at bottom, #050505, #000000);
+}
+
+canvas {
+width: 100vw;
+height: 100vh;
+display: block;
+}
+
+/* Modal Overlay */
+#overlay {
+position: fixed;
+inset: 0;
+background: rgba(0, 0, 0, 0.55);
+backdrop-filter: blur(8px);
+display: flex;
+align-items: center;
+justify-content: center;
+z-index: 10;
+}
+
+.hidden {
+display: none;
+}
+
+.modal {
+max-width: 520px;
+padding: 28px;
+border-radius: 16px;
+background: rgba(20, 20, 20, 0.85);
+color: #ffffff;
+box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5);
+}
+
+.modal h2 {
+margin-bottom: 12px;
+font-size: 1.6rem;
+}
+
+.modal p {
+line-height: 1.6;
+font-size: 0.95rem;
+opacity: 0.9;
+}
+
+.modal button {
+margin-top: 20px;
+padding: 10px 18px;
+border: none;
+border-radius: 20px;
+cursor: pointer;
+background: linear-gradient(135deg, #ff9800, #ff5722);
+color: #000;
+font-weight: 600;
+}
+
+@media (max-width: 600px) {
+.modal {
+margin: 16px;
+font-size: 0.9rem;
+}
+}
